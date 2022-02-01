@@ -3,36 +3,50 @@
   width: 800px;
   font-size: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-  "header header header header"
-  "nav article-1 article-1 ad-area"
-  "nav article-2 article-2 ad-area"
-  "footer footer footer footer";
+  "header header header header header header"
+  "nav article-1 article-1 article-1 ad-area ad-area"
+  "nav article-1 article-1 article-1 ad-area ad-area"
+  "nav article-2 article-2 article-2 ad-area ad-area"
+  "nav article-2 article-2 article-2 ad-area ad-area"
+  "footer footer footer footer footer footer";
 }
 
 #header {
+  grid-area: header;
   background-color: red;
+  text-align: center;
 }
 
 #footer {
+  grid-area: footer;
   background-color: indigo;
+  text-align: center;
 }
 
 #article-1 {
+  grid-area: article-1;
   background-color: yellow;
+  text-align: center;
 }
 
 #article-2 {
+  grid-area: article-2;
   background-color: green;
+  text-align: center;
 }
 
 #nav {
+  grid-area: nav;
   background-color: orange;
+  text-align: center;
 }
 
 #ad-area {
+  grid-area: ad-area;
   background-color: blue;
+  text-align: center;
 }
 
