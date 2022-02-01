@@ -2,6 +2,14 @@
   height: 600px;
   width: 800px;
   font-size: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header header"
+  "nav article-1 article-1 ad-area"
+  "nav article-2 article-2 ad-area"
+  "footer footer footer footer";
 }
 
 #header {
@@ -27,3 +35,4 @@
 #ad-area {
   background-color: blue;
 }
+
