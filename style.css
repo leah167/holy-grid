@@ -3,8 +3,8 @@
   width: 800px;
   font-size: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-template-areas: 
   "header header header header header header"
   "nav article-1 article-1 article-1 ad-area ad-area"
